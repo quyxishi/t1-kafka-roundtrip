@@ -22,10 +22,10 @@ sudo docker build --tag spring-boot .
 ```shell
 sudo docker-compose up -d kafka
 sudo docker run --rm -p 8080:8080 \
-     -e SPRING_KAFKA_BOOTSTRAP_SERVERS='kafka:9092' \
-     --network t1-kafka-roundtrip_default \
-     --link kafka:kafka \
-     spring-boot
+            -e SPRING_KAFKA_BOOTSTRAP_SERVERS='kafka:9092' \
+            --network t1-kafka-roundtrip_default \
+            --link kafka:kafka \
+            spring-boot
 ```
 
 ## Development
